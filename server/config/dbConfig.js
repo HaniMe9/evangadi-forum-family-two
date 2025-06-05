@@ -9,10 +9,5 @@ const dbConnection = mysql2.createPool({
 })
 
 dbConnection.execute("select 'test'", (err,result)=>{
-    if(err){
-        console.log(err.message);
-    }else{
-        console.log(result);
-    }
-        
+
 })
